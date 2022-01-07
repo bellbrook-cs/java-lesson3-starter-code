@@ -36,7 +36,7 @@ class Main {
     System.out.println("\n--- PART 6 ---\n");
 
     String row1 = "id first last";
-    String row2 = "1\tRose Tyler";
+    String row2 = "1 Rose Tyler";
     String row3 = "2 Amy Pond";
     String row4 = "3 Clara Oswald";
 

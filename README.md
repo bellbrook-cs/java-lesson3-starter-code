@@ -137,7 +137,7 @@ jshell> System.out.println("Hello\tWorld");
 jshell> System.out.println("Hello\\World");
 ```
 
-## Part 2
+## Part 3
 
 Imagine someone just learning `String` operations has started writing some Java code to test things out, they were struggling and very confused by their codes ouput. Please help them out by debugging their code and figuring out why their code is not working as expected.
 
@@ -163,7 +163,7 @@ System.out.println("World");
 
 This goes for all problems.
 
-## Part 3
+## Part 4
 
 Our new student was trying to combine the `firstName`, `middleName`, and `lastName` variables to make a new fullName variable. However they expected the following to print out:
 
@@ -173,13 +173,13 @@ Fred Edward Smith
 
 Fix the issue by modifying line 17.
 
-## Part 4
+## Part 5
 
 After helping our new student out, they are confused why the value of `numLetters` changed. they wanted to know the amount of letters in Fred's full name, but wasn't expecting it to increase by two after you helped him out. 
 
 How can you change line 24 to count only the number of letters in Fred's name.
 
-## Part 5
+## Part 6
 
 Out new student tried displaying a table of data, however it isn't displaying it how they wanted. They want it to display neat columns of data instead of the crooked columns displaying now. Similar to the following:
 
@@ -192,7 +192,7 @@ id  first   last
 
 Modify lines 31-34 to solve this problem using escape character(s).
 
-## Part 6
+## Part 7
 
 After looking at the table, our new student is still not satisfied. They want to see what it would look like if all the headers are in all caps like this:
 

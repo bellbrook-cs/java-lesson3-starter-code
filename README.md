@@ -143,7 +143,7 @@ Imagine someone just learning `String` operations has started writing some Java 
 
 Remember to read directions carefully, if a problem asks you to solve a problem by modifying a certain line then **ONLY MODIFY THAT LINE**.
 
-For part two, uor new student was trying to use substring to print the following:
+For part three, our new student was trying to use substring to print the following:
 
 ```
 Hello

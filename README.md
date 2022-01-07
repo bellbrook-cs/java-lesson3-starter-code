@@ -150,7 +150,7 @@ Hello
 World
 ```
 
-Figure out what is wrong with lines 7 and 8, and fix the problem. Only modify lines 7 and 8.
+Figure out what is wrong with lines 14 and 15, and fix the problem. Only modify lines 14 and 15.
 
 NOTE:
 
@@ -171,13 +171,13 @@ Our new student was trying to combine the `firstName`, `middleName`, and `lastNa
 Fred Edward Smith
 ```
 
-Fix the issue by modifying line 17.
+Fix the issue by modifying line 24.
 
 ## Part 5
 
 After helping our new student out, they are confused why the value of `numLetters` changed. they wanted to know the amount of letters in Fred's full name, but wasn't expecting it to increase by two after you helped him out. 
 
-How can you change line 24 to count only the number of letters in Fred's name.
+How can you change line 31 to count only the number of letters in Fred's name.
 
 ## Part 6
 
@@ -190,7 +190,7 @@ id  first   last
 3   Clara   Oswald
 ```
 
-Modify lines 31-34 to solve this problem using escape character(s).
+Modify lines 38-41 to solve this problem using escape character(s).
 
 ## Part 7
 
@@ -203,7 +203,7 @@ ID  FIRST   LAST
 3   Clara   Oswald
 ```
 
-Modify line 44 to solve this issue.
+Modify line 51 to solve this issue.
 
 ## Submission
 

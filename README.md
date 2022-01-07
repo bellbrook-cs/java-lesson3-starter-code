@@ -1,10 +1,205 @@
-# Template Assignment
+# String Operations
 
-## Problem Statement
+## Part 1
 
-## Input Description
+Please switch to the tab above labeled `Shell` and type the following:
 
-## Sample Input/Output
+```sh
+jshell
+```
+
+Then hit enter.
+
+You should see the following after replit is done loading:
+
+```sh
+|  Welcome to JShell -- Version 11.0.11
+|  For an introduction type: /help intro
+
+jshell>
+```
+
+This lets us type Java commands into the console, and immediately see what they do. For example, if you type `System.out.println("Hello")` into jshell it will say this:
+
+```sh
+|  Welcome to JShell -- Version 11.0.11
+|  For an introduction type: /help intro
+
+jshell> System.out.println("Hello")
+Hello
+
+jshell>
+```
+
+## Part 2
+
+You are going to try a few different things throughout the lesson today to figure what `String` operations in Java do.
+
+### Concatenation
+
+```bash
+jshell> String firstName = "Fred";
+firstName ==> "Fred"
+jshell> String lastName = "Smith";
+lastName ==> "Smith"
+jshell> String fullName = firstName + " " + lastName;
+fullName ==> ?????????
+```
+
+Think about the following:
+
+- What is `fullName` equal to now?
+- What does concatenation do?
+
+### `length()`
+
+```bash
+jshell> int lengthOfName = fullName.length();
+lengthOfName ==> ???????
+```
+
+Think about the following:
+
+- What is `lengthOfName` equal to now?
+- What does `length()` do?
+
+### `substring(int)`
+
+```bash
+jshell> fullName.substring(2);
+$1 ==> ???????
+```
+
+Think about the following:
+
+- What is `$1` equal to now?
+- What does `subtring(int)` do?
+
+### `substring(int, int)`
+
+```bash
+jshell> fullName.substring(2,4);
+$2 ==> ???????
+```
+
+Think about the following:
+
+- What is `$2` equal to now?
+- What does `substring(int, int)` do?
+
+### `toLowerCase()`
+
+```bash
+jshell> fullName.toLowerCase();
+$3 ==> ???????
+```
+
+Think about the following:
+
+- What is `$3` equal to now?
+- What does `toLowerCase()` do?
+- Did the value of `fullName` change?
+
+### `toUpperCase()`
+
+```bash
+jshell> fullName.toLowerCase();
+$4 ==> ???????
+```
+
+Think about the following:
+
+- What is `$3` equal to now?
+- What does `toLowerCase()` do?
+- Did the value of `fullName` change?
+
+### Escape Characters
+
+How do you think you would write a program to print the following:
+
+```
+John said, "I don't know"
+```
+
+You may have issues printing characters like `"`
+
+The solution is using escape characters. Escape characters are typed by using a `\` character before another character. to print the previous message you would need to write the following:
+
+```java
+System.out.println("John said, \"I don\'t know\"");
+```
+
+Try typing the following into jshell, and figuring out what each escape character does.
+
+```sh
+jshell> System.out.println("Hello\nWorld");
+jshell> System.out.println("Hello\tWorld");
+jshell> System.out.println("Hello\\World");
+```
+
+## Part 2
+
+Imagine someone just learning `String` operations has started writing some Java code to test things out, they were struggling and very confused by their codes ouput. Please help them out by debugging their code and figuring out why their code is not working as expected.
+
+Remember to read directions carefully, if a problem asks you to solve a problem by modifying a certain line then **ONLY MODIFY THAT LINE**.
+
+For part two, uor new student was trying to use substring to print the following:
+
+```
+Hello
+World
+```
+
+Figure out what is wrong with lines 7 and 8, and fix the problem. Only modify lines 7 and 8.
+
+NOTE:
+
+Don't push your luck, you should use the new material to solve these problems and **I will not give credit** for answers similar to this:
+
+```
+System.out.println("Hello");
+System.out.println("World");
+```
+
+This goes for all problems.
+
+## Part 3
+
+Our new student was trying to combine the `firstName`, `middleName`, and `lastName` variables to make a new fullName variable. However they expected the following to print out:
+
+```
+Fred Edward Smith
+```
+
+Fix the issue by modifying line 17.
+
+## Part 4
+
+After helping our new student out, they are confused why the value of `numLetters` changed. they wanted to know the amount of letters in Fred's full name, but wasn't expecting it to increase by two after you helped him out. 
+
+How can you change line 24 to count only the number of letters in Fred's name.
+
+## Part 5
+
+Out new student tried displaying a table of data, however it isn't displaying it how they wanted. They want it to display neat columns of data instead of the crooked columns displaying now. Similar to the following:
+
+```
+id  first   last
+1   Rose    Tyler
+2   Amy     Pond
+3   Clara   Oswald
+```
+
+## Part 6
+
+After looking at the table, our new student is still not satisfied. They want to see what it would look like if all the headers are in all caps like this:
+
+```
+ID  FIRST   LAST
+1   Rose    Tyler
+2   Amy     Pond
+3   Clara   Oswald
+```
 
 ## Submission
 
@@ -16,49 +211,3 @@ Please submit the following to google classroom:
     * Click `Download`.
     * Upload the downloaded file to google classroom.
 2. A link to your replit project
-
-## Rubric
-
-<table>
-<tbody>
-  <tr>
-    <td valign="top"><b>Coded Solution</b><br><br>The coded solutions works correctly with no syntax, logic, or run-time errors.</td>
-    <td valign="top"><b>8pts</b><br><br>* The submitted code compiles successfully. <br><br>* The submitted program is free of run-time and logic errors. <br><br>* The submitted program returns the anticipated output for all input tested.
-</td>
-    <td valign="top"><b>4pts</b><br><br>* The submitted program compiles successfully. <br><br>* The submitted program includes run-time and/or logic errors that result in correct output. <br><br>* The submitted program returns the anticipated output for most (but not all) input tested.
-</td>
-    <td valign="top"><b>2pts</b><br><br>* A program is submitted but it fails to compile. <br><br><b><em>or</em></b> <br><br>* The submitted program compiles correctly. <br><br>* The submitted program includes run-time and/or logic errors that result in incorrect output. <br><br>* The submitted program returns the anticipated output for less than half of the input tested.
-</td>
-    <td valign="top"><b>0pts</b><br><br>* A program solution is not submitted.
-</td>
-  </tr>
-  <tr>
-    <td valign="top"><b>Target Concepts</b><br><br>The program effectively uses the intended target concepts.</td>
-    <td valign="top"><b>8pts</b><br><br>* The program effectively uses the target concepts being discussed in class or outlined within the project specifications for the given problem situation.
-</td>
-    <td valign="top"><b>4pts</b><br><br>* The program incorrectly uses the target concepts being discussed in class or outlined within the project specifications for the given problem situation. <br><br>* Moderate effort to use the target concepts is evident.
-</td>
-    <td valign="top"><b>2pts</b><br><br>* The program incorrectly uses the target concepts being discussed in class or outlined within the project specifications for the given problem situation. <br><br>* Minimal effort to use the target concepts is evident.
-</td>
-    <td valign="top"><b>0pts</b><br><br>* A program solution is not submitted. <br><br><b><em>or</em></b><br><br> * No attempt was made to use the target concepts being discussed in class or outlined within the project specifications for the given problem situation.
-</td>
-  </tr>
-  <tr>
-    <td valign="top"><b>User Interface</b><br><br>The program produces output that is easy for the user to read.</td>
-    <td valign="top"><b>2pts</b><br><br>* Output demonstrates appropriate spacing for best user readability. <br><br>* Output contains no spelling or grammatical errors.
-</td>
-    <td valign="top"><b>1pts</b><br><br>* Output includes minor spacing problems which results in information which is inconsistent or confusing. <br><br>* Output contains minor spelling or grammatical errors.
-</td>
-    <td valign="top"><b>0pts</b><br><br>* A program solution is not submitted. <br><br><b><em>or</em></b> <br><br>* Output includes major spacing problems which is severely inconsistent or confusing. <br><br>* Output contains major spelling or grammatical errors.
-</td>
-  </tr>
-  <tr>
-    <td valign="top"><b>Readability of Code</b><br><br>The program code is documented and formatted for human readability.</td>
-    <td valign="top"><b>2pts</b><br><br>* The submitted solution includes the required header documentation (name, date, purpose). <br><br>* Header documentation includes appropriate modification comments if the submitted solution is a modification to a previously submitted program. <br><br>* Code is properly formatted. Open and close brackets are properly aligned and code within the brackets is appropriately indented. <br><br>* All variables are self-documented (i.e. named in such a way that the name indicates the purpose of the variable).
-</td>
-    <td valign="top"><b>1pts</b><br><br>* The submitted solution includes the some, but not ALL, of the required header documentation (name, date, purpose). <br><br>* In the case of modifications to a previously submitted program, modification comments are missing or incomplete. <br><br>* Code is unformatted and difficult to follow. Brackets aren't aligned and/or code within brackets is not indented. <br><br>* Numerous variable names are ambiguous (i.e. x) and do not indicate the purpose of the variable.
-</td>
-    <td valign="top"><b>0pts</b><br><br>* A program solution is not submitted. <br><br><b><em>or</em></b> <br><br>* The submitted solution includes no documentation of any kind.</td>
-  </tr>
-</tbody>
-</table>

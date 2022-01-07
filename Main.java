@@ -7,7 +7,7 @@
 
 class Main {
   public static void main(String[] args) {
-    System.out.println("\n--- PART 2 ---\n");
+    System.out.println("\n--- PART 3 ---\n");
 
     String message = "Hello World!";
 
@@ -15,7 +15,7 @@ class Main {
     System.out.println(message.substring(7, 11));
 
 
-    System.out.println("\n--- PART 3 ---\n");
+    System.out.println("\n--- PART 4 ---\n");
     
     String firstName = "Fred";
     String middleName = "Edward";
@@ -26,14 +26,14 @@ class Main {
     System.out.println(fullName);
 
 
-    System.out.println("\n--- PART 4 ---\n");
+    System.out.println("\n--- PART 5 ---\n");
 
     int numLetters = fullName.length();
 
     System.out.println(numLetters);
 
 
-    System.out.println("\n--- PART 5 ---\n");
+    System.out.println("\n--- PART 6 ---\n");
 
     String row1 = "id first last";
     String row2 = "1\tRose Tyler";
@@ -46,7 +46,7 @@ class Main {
     System.out.println(row4);
 
 
-    System.out.println("\n--- PART 6 ---\n");
+    System.out.println("\n--- PART 7 ---\n");
 
     System.out.println(row1);
     System.out.println(row2);

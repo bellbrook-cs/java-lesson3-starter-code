@@ -35,10 +35,10 @@ class Main {
 
     System.out.println("\n--- PART 5 ---\n");
 
-    String row1 = "id\tfirst\tlast";
-    String row2 = "1\tRose\tTyler";
-    String row3 = "2\tAmy\t\tPond";
-    String row4 = "3\tClara\tOswald";
+    String row1 = "id first last";
+    String row2 = "1\tRose Tyler";
+    String row3 = "2 Amy Pond";
+    String row4 = "3 Clara Oswald";
 
     System.out.println(row1);
     System.out.println(row2);

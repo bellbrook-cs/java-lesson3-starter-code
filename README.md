@@ -103,14 +103,14 @@ Think about the following:
 ### `toUpperCase()`
 
 ```bash
-jshell> fullName.toLowerCase();
+jshell> fullName.toUpperCase();
 $4 ==> ???????
 ```
 
 Think about the following:
 
-- What is `$3` equal to now?
-- What does `toLowerCase()` do?
+- What is `$4` equal to now?
+- What does `toUpperCase()` do?
 - Did the value of `fullName` change?
 
 ### Escape Characters

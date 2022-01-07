@@ -190,6 +190,8 @@ id  first   last
 3   Clara   Oswald
 ```
 
+Modify lines 31-34 to solve this problem using escape character(s).
+
 ## Part 6
 
 After looking at the table, our new student is still not satisfied. They want to see what it would look like if all the headers are in all caps like this:
@@ -200,6 +202,8 @@ ID  FIRST   LAST
 2   Amy     Pond
 3   Clara   Oswald
 ```
+
+Modify line 44 to solve this issue.
 
 ## Submission
 
